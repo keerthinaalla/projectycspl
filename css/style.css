@@ -1,0 +1,192 @@
+/******Font********/
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/css/fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('/css/fonts/Gilroy-Medium.woff') format('woff'),
+        url('/css/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/css/fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('/css/fonts/Gilroy-Regular.woff') format('woff'),
+        url('/css/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/css/fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('/css/fonts/Gilroy-SemiBold.woff') format('woff'),
+        url('Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/css/fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('/css/fonts/Gilroy-Bold.woff') format('woff'),
+        url('/css/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/**********Colors ***********/
+:root {
+    --title-color: #01579B;
+
+    --first-color: #01579B;
+    --second-color: #444444;
+    --background-color: #e0f1ff;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Gilroy", sans-serif;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    font-family: 'Gilroy';
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body,
+input,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: background .4s;
+    /* for dark mode animation*/
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-regular);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-wrapper {
+    background-color: var(--background-color);
+}
+
+.left-para {
+    color: var(--title-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.left-para-1 {
+    font-size: 1.17rem;
+}
+
+.connection-section {}
+
+.connection-section .top-section {
+    margin-top: -3rem;
+    background-color: #fff;
+
+}
+
+.connection-section .top-section .border-style {
+    background-color: #ccc;
+    width: .2%;
+}
+
+.connection-section .bottom-section {
+    margin: 6rem 0;
+}
+
+.card-section {
+    background-color: var(--background-color);
+    padding: 5rem 0;
+}
+
+.card-section h4 {
+    color: var(--text-color);
+}
+
+.card-section p {
+    font-size: .9rem;
+}
+
+.card-section .card__row .card__card {
+    width: 30%;
+    margin-right: 2rem;
+}
+
+.card-section .card__row .card__card .card__para {
+    line-height: 1.6rem;
+}
+
+.store-benefit-section,
+.extention-section {
+    padding: 4rem 0;
+}
+
+.store-benefit-section .card__stpre-card {
+    width: 25%;
+    border: none;
+}
+
+.store-benefit-section .card__store-para {
+    font-size: .95rem;
+}
+
+.store-benefit-section .card__col {
+    display: flex;
+    justify-content: end;
+}
+
+.extention-section h1 {
+    font-size: 2.6rem;
+
+}
+
+.card__img {
+    border-radius: 50%;
+    border: 1px solid var(--title-color);
+    padding: 1rem;
+}
